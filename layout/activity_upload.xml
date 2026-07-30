@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E3FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:text="←"
+                android:textSize="28sp"
+                android:textColor="#111827"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvUploadTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload: Step 1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111827" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="— • •"
+            android:textSize="24sp"
+            android:textColor="#6366F1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- STEP 1 -->
+        <LinearLayout
+            android:id="@+id/step1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Material Type"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/btnNotes"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Notes"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#111827"
+                android:background="@drawable/bg_course_card"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/btnQuizzes"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Quizzes"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#111827"
+                android:background="@drawable/bg_course_card"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/btnFinalPapers"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Final Papers"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#111827"
+                android:background="@drawable/bg_course_card"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:text="Semester"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:id="@+id/semesterContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:text="Subject"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSubject"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <!-- STEP 2 -->
+        <LinearLayout
+            android:id="@+id/step2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_course_card"
+                android:elevation="6dp"
+                android:padding="20dp"
+                android:layout_marginBottom="26dp">
+
+                <TextView
+                    android:text="📁"
+                    android:textSize="38sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Prepare your file"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#111827"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:text="Upload your file to Google Drive first."
+                    android:textSize="13sp"
+                    android:textColor="#6B7280"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:text="Set sharing to “Anyone with the link”."
+                    android:textSize="13sp"
+                    android:textColor="#6366F1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Google Drive Link"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etFileUrl"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Paste Google Drive link here"
+                android:background="@drawable/bg_input"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:paddingStart="14dp"
+                android:singleLine="true"
+                android:layout_marginBottom="22dp" />
+
+            <TextView
+                android:text="File Information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etFileName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="File name e.g. Chapter 5.pdf"
+                android:background="@drawable/bg_input"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:paddingStart="14dp"
+                android:singleLine="true"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_disclaimer"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Disclaimer: By uploading a resource, you confirm that the material is student-generated or that you have permission to share it for educational purposes. ConnectU serves as a collaborative learning platform and users are encouraged to verify the content with official course materials."
+                    android:textSize="12sp"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I confirm that this material is my own notes or that I have permission to share it for educational purposes."
+                android:textSize="12sp"
+                android:textColor="#111827"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+
+        <!-- STEP 3 -->
+        <LinearLayout
+            android:id="@+id/step3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:text="Resource Preview"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvPreview"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Chapter 5.pdf\n2.4 MB • PDF document"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:textColor="#111827"
+                android:background="@drawable/bg_course_card"
+                android:layout_marginBottom="22dp" />
+
+            <TextView
+                android:text="Title of the Resource"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvTitlePreview"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="File title"
+                android:background="@drawable/bg_input"
+                android:textColor="#111827"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:text="Auto Tags"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvAutoTags"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="ICT608, Semester 6, Lecture Notes"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:textColor="#6B7280"
+                android:background="@drawable/bg_input"
+                android:layout_marginBottom="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Continue →"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#6366F1" />
+
+    </LinearLayout>
+</ScrollView>

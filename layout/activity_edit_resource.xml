@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E3FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="28sp"
+            android:textColor="#111827"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Resource"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:text="File Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etFileName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="File name"
+            android:background="@drawable/bg_input"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:singleLine="true"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:text="Google Drive Link"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etFileUrl"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Google Drive link"
+            android:background="@drawable/bg_input"
+            android:textColor="#111827"
+            android:textColorHint="#9CA3AF"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:singleLine="true"
+            android:layout_marginBottom="26dp" />
+
+        <TextView
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save Changes"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="#6366F1" />
+
+    </LinearLayout>
+</ScrollView>
